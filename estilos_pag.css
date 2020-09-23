@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #c1c1c1;
+}
+table{
+    border-collapse: :collapse;
+    text-align: center;
+    border:0px solid black;
+    width:1000px;
+    font-size: 18px;
+}
+td {    
+    padding: 8px;     
+    background: #0004;     
+    border-bottom: 1px solid #ffffff;
+    color: #000;    
+    border-top: 1px solid transparent; 
+}
+tr:hover td { background: #565656; color: #fffefe; }
+th{
+    border:1px solid black;
+    background: -webkit-linear-gradient(top,#FFFFFF,#006699);
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+caption{
+    height: 25px;
+    border:1px solid black;
+    text-shadow: rgb(0,100,120) 3px 3px 5px;
+    font:bold 20px verdana,sans-serif;
+}
+header{
+    background-color: black;
+    text-align: center;
+    color: white;
+    clear: both;
+    padding: 20px;
+    width: 100%;
+
+}
+ul{
+   background-color: #4e4d4d;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    clear: both;
+    padding: 20px;
+}
+.menuV{
+    float: left;
+    width: 18%;
+    overflow: hidden;
+    border: 0px double;
+}
+
+.menuV a{
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+}
+
+.menuV a:hover{
+    background-color: white;
+    color: black;
+}
+
+
+.navegacion{
+     background: #fff;
+     
+}
+.menu{
+    
+    border: 2px double;
+}
+
+.menu a{
+    background-color: #211f1f;
+    color: white;
+    text-decoration: none;
+
+    
+    text-align: center;
+    padding: 15px;
+}
+
+.menu > li{
+    position: relative;
+    background-color: black;
+    display: inline-block;
+    width: 24%;
+}
+.menu a:hover{
+    background-color: white;
+    color: black;
+}
+
+.menu > li > a{
+    display: block;
+    color: white;
+    padding: 20px;
+}
+
+.menu li a:hover{
+    color: black;
+    transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu{
+    position: absolute;
+    
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.submenu li a{
+    display: block;
+}
+
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
